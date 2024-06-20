@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { NavbarDemo } from "@/components/ui/Navbar";
+import Navbar from "@/components/ui/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
  title: {
   template:"Abu_Bakar" ,
-  default: "Abu Bakar PIAIC Last - Class Of Bahria Audotarium"
+  default: "Abu Bakar "
 }
 
 };
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <NavbarDemo />
+       <Navbar />
           {children}
       
         
